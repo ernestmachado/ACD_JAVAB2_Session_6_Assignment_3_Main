@@ -1,0 +1,45 @@
+---------- OUTPUT WITH synchronized ----------------
+Opening Balance :100
+Thread: JOHN DEBIT 20
+Account balance is now: 80
+Thread: MIKE DEBIT 20
+Account balance is now: 60
+Thread: MIKE CREDIT 5
+Account balance is now: 65
+Thread: MIKE DEBIT 15
+Account balance is now: 50
+Thread: MIKE CREDIT 5
+Account balance is now: 55
+Thread: MIKE DEBIT 10
+Account balance is now: 45
+Thread: JOHN CREDIT 5
+Account balance is now: 50
+Thread: JOHN DEBIT 15
+Account balance is now: 35
+Thread: JOHN CREDIT 5
+Account balance is now: 40
+Thread: JOHN DEBIT 10
+Account balance is now: 30
+
+---------- OUTPUT WITH OUT synchronized ----------------
+Opening Balance :100
+Thread: JOHN DEBIT 20
+Thread: MIKE DEBIT 20
+Account balance is now: 80
+Account balance is now: 60
+Thread: JOHN CREDIT 5
+Thread: MIKE CREDIT 5
+Account balance is now: 65
+Account balance is now: 65
+Thread: JOHN DEBIT 15
+Account balance is now: 50
+Thread: MIKE DEBIT 15
+Account balance is now: 35
+Thread: JOHN CREDIT 5
+Account balance is now: 55
+Thread: MIKE CREDIT 5
+Account balance is now: 40
+Thread: JOHN DEBIT 10
+Account balance is now: 30
+Thread: MIKE DEBIT 10
+Account balance is now: 20
